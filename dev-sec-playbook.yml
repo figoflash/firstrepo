@@ -1,0 +1,9 @@
+- hosts: localhost
+  collections:
+    - devsec.hardening
+  roles:
+    - os_hardening
+  vars:
+    sysctl_overwrite:
+      # Enable IPv4 traffic forwarding.
+      net.ipv4.ip_forward: 1
