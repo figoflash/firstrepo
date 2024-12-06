@@ -5,5 +5,5 @@
     - os_hardening
   vars:
     sysctl_overwrite:
-      # Enable IPv4 traffic forwarding.
-      net.ipv4.ip_forward: 1
+      # Disable IPv4 traffic forwarding.
+      net.ipv4.ip_forward: 0
